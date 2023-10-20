@@ -1,0 +1,138 @@
+﻿<Window x:Class="ForJob.App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        Title="Market" Height="600" Width="1000">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column ="0" 
+              Background="#65451F">
+            <StackPanel Margin="20">
+                <Border x:Name="menuShops"  
+                        Height="40" 
+                        Margin="0 5"
+                        MouseDown="menuShops_MouseDown"
+                        Background="#A47E3B"
+                        CornerRadius="10">
+                    <Label x:Name="lbShops"
+                           Content="Shops"
+                           FontSize="18"
+                           HorizontalAlignment="Center"
+                           FontFamily="Jetbrains mono"
+                           VerticalAlignment="Center"
+                           Foreground="#FFF2D8"
+                        />
+                </Border>
+
+                <Border Height="40" 
+                        Margin="0 5"
+                        Background="#A47E3B"
+                        CornerRadius="10">
+                    <Label Content="Categories"
+                           FontSize="18"
+                           HorizontalAlignment="Center"
+                           FontFamily="Jetbrains mono"
+                           VerticalAlignment="Center"
+                           Foreground="#FFF2D8"
+                        />
+                </Border>
+
+                <Border Height="40" 
+                        Margin="0 5"
+                        Background="#A47E3B"
+                        CornerRadius="10">
+                    <Label Content="Shops"
+                           FontSize="18"
+                           HorizontalAlignment="Center"
+                           FontFamily="Jetbrains mono"
+                           VerticalAlignment="Center"
+                           Foreground="#FFF2D8"
+                        />
+                </Border>
+
+                <Border Height="40" 
+                        Margin="0 5"
+                        Background="#A47E3B"
+                        CornerRadius="10">
+                    <Label Content="Products"
+                           FontSize="18"
+                           HorizontalAlignment="Center"
+                           FontFamily="Jetbrains mono"
+                           VerticalAlignment="Center"
+                           Foreground="#FFF2D8"
+                        />
+                </Border>
+
+                <Border Height="40" 
+                        Margin="0 5"
+                        Background="#A47E3B"
+                        CornerRadius="10">
+                    <Label Content="Settings"
+                           FontSize="18"
+                           HorizontalAlignment="Center"
+                           FontFamily="Jetbrains MONO"
+                           VerticalAlignment="Center"
+                           Foreground="#FFF2D8"
+                        />
+                </Border>
+
+                <Border Height="40" 
+                        Margin="0 5"
+                        Background="#A47E3B"
+                        CornerRadius="10">
+                    <Label Content="Information"
+                           FontSize="18"
+                           HorizontalAlignment="Center"
+                           FontFamily="Jetbrains mono"
+                           VerticalAlignment="Center"
+                           Foreground="#FFF2D8"
+                        />
+                </Border>
+
+                <Border Height="40" 
+                        Margin="0 5"
+                        Background="#A47E3B"
+                        CornerRadius="10">
+                    
+                    <Label Content="About"
+                           FontSize="18"
+                           HorizontalAlignment="Center"
+                           FontFamily="Jetbrains mono"
+                           VerticalAlignment="Center"
+                           Foreground="#FFF2D8"
+                        />
+                </Border>
+
+                <Border x:Name="LogOut" 
+                    Height="40" 
+                    Margin="0 5"
+                    Background="#A47E3B"
+                    CornerRadius="10"
+                    MouseDown="LogOut_MouseDown">
+                    
+                    <Label Content="Log out"
+                        FontSize="18"
+                        HorizontalAlignment="Center"
+                        FontFamily="Jetbrains mono"
+                        VerticalAlignment="Center"
+                        Foreground="#FFF2D8"/>
+                </Border>
+            </StackPanel>
+            
+        </Grid>
+        <Grid Grid.Column ="1" 
+            Background="#EAC696">
+            <Frame x:Name="Navigator"
+                   Margin="10"
+                   NavigationUIVisibility="Hidden"> </Frame>
+        </Grid>
+       
+    </Grid>
+</Window>
